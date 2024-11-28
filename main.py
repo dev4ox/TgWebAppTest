@@ -21,6 +21,11 @@ async def start_handler(message: types.Message):
     await message.answer("Нажмите, чтобы открыть мини-приложение:", reply_markup=keyboard)
 
 
+@dp.message()
+async def message_handler(message: types.Message):
+    pass
+
+
 async def main() -> None:
     bot = Bot(token=secret.tg_token,
               default=DefaultBotProperties(parse_mode=ParseMode.HTML))
