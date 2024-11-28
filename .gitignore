@@ -2,3 +2,6 @@ venv/
 tg_module/secret.py
 tg_module/db.sqlite3
 temp/
+deploy.sh
+deploy2.sh
+server_deploy.bat
